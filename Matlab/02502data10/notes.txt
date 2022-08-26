@@ -1,0 +1,21 @@
+sub-01_ses-forrestgump_anat_sub-01_ses-forrestgump_T1w.nii.gz  -> MR1_T1
+sub-01_ses-forrestgump_anat_sub-01_ses-forrestgump_T2w.nii.gz  -> MR1_T2
+sub-02_ses-forrestgump_anat_sub-02_ses-forrestgump_T1w.nii.gz  -> MR2_T1
+sub-02_ses-forrestgump_anat_sub-02_ses-forrestgump_T2w.nii.gz  -> MR2_T2
+sub-03-ses-forrestgump-anat-sub-03_ses-forrestgump_T1w.nii.gz  -> MR3_T1
+sub-03-ses-forrestgump-anat-sub-03_ses-forrestgump_T2w.nii.gz  -> MR3_T2
+sub-05-ses-forrestgump-anat-sub-05_ses-forrestgump_T1w.nii.gz  -> MR4_T1
+sub-05-ses-forrestgump-anat-sub-05_ses-forrestgump_T2w.nii.gz  -> MR4_T2
+
+
+
+
+
+
+
+fixed image: MR1_T1
+
+1. moving image: MR2_T2
+
+2. moving image: 
+
