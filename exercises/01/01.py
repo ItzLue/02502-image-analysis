@@ -86,9 +86,14 @@ io.show()
 # Set the first 30 colums to pixel value 0
 
 # %% Exercise 11
-# todo NOT WORKING
+
+# convert true false array to 0 and 1 array
+def convert_to_binary(image):
+    binary_image = img_as_ubyte(image)
+    return binary_image
+
 mask = im_org > 150
-io.imshow(mask)
+io.imshow(convert_to_binary(mask))
 io.show()
 
 im_org[mask] = 255
@@ -216,7 +221,8 @@ print(f"Bin edges: {bin_left} to {bin_right}")
 
 y, x, _ = plt.hist(im_org.ravel(), bins=256)
 
-# Color channels #todo NOT WORKING
+# Color channels
+# todo NOT WORKING
 # %% Exercise 19
 
 im_name = "DTUSign1.jpg"
@@ -240,8 +246,8 @@ g_comp = im_org[:, 0, :]
 io.imshow(g_comp)
 plt.title('DTU sign image (Green)')
 io.show()
-# %% Visualize blue color component
 
+# %% Visualize blue color component
 b_comp = im_org[0, :, :]
 io.imshow(b_comp)
 plt.title('DTU sign image (Blue)')
@@ -266,7 +272,19 @@ io.show()
 io.imsave('data/DTUSign1-marked.png', im_org)
 
 # %% Exercise 21
-# TODO find red area??
+# TODO find black pixels
+
+def convert_to_binary(image):
+    binary_image = img_as_ubyte(image)
+    return binary_image
+
+mask = im_org >= 255
+io.imshow(convert_to_binary(mask))
+io.show()
+
+im_org[mask] = 255
+io.imshow(im_org)
+io.show()
 
 # %% Exercise 22
 # TODO
